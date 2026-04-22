@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Chibi Planet</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Chibi Planet</h2>
+  <nav>
+    <a href="index.html">ทั้งหมด</a>
+    <a href="chibi.html">Chibi Planet</a>
+    <a href="zepeto.html">ZEPETO</a>
+  </nav>
+<header> 
+
+<div class="search-box">
+  <input 
+    type="text" 
+    id="search" 
+    placeholder="ค้นหาสินค้า..."
+    oninput="handleSearch(this.value)"
+    onfocus="showSuggestions()"
+  >
+  <div id="suggestions" class="suggestions"></div>
+</div>
+<div class="container">
+
+<script src="js/main.js"></script>
+<script>
+renderProducts(false);
+</script>
+
+</body>
+</html>

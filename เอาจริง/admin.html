@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ADMIN - KS SHOP</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<h2>⚙️ จัดการสินค้า</h2>
+
+<div class="form">
+  <input id="name" placeholder="ชื่อสินค้า">
+  <input id="price" placeholder="ราคา">
+  <input id="stock" placeholder="จำนวน">
+
+  <!-- upload -->
+  <input type="file" id="imageFile">
+
+  <img id="preview" class="preview">
+
+  <select id="category">
+    <option value="chibi">Chibi Planet</option>
+    <option value="zepeto">ZEPETO</option>
+  </select>
+
+  <button id="saveBtn">💾 บันทึก</button>
+</div>
+
+<h3>รายการสินค้า</h3>
+<div class="list" id="list"></div>
+
+<script src="js/admin.js"></script>
+<script>
+  initAdmin();
+</script>
+
+</body>
+</html>
